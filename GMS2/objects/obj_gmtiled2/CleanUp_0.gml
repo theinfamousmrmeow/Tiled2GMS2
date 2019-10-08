@@ -1,0 +1,1 @@
+tiled_destroy(tiles)

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="23">
+ <tileset firstgid="1" name="tl_dungeon_sheet" tilewidth="16" tileheight="16" tilecount="250" columns="25">
+  <image source="../sprites/spr_dungeon_sheet/bf3bb2b3-0b48-43c7-aee7-b9233d8db6e8.png" width="400" height="160"/>
+ </tileset>
+ <tileset firstgid="251" name="tl_rotation_test" tilewidth="32" tileheight="32" margin="16" tilecount="4" columns="2">
+  <image source="../sprites/spr_rotation_test/0fd70d2a-56e6-4dac-a2af-e44556aaca64.png" width="96" height="96"/>
+ </tileset>
+ <layer id="6" name="Floor" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyzYmBgsBrFo3gUj+JRPIpJxAAAJFqh
+  </data>
+ </layer>
+ <layer id="7" name="Floor_clutter" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiZ4A+CXgClD0DpBEJ6D9LKUUjgLwNDA5R+QAfrqAIOD7QDRsGQBwforG8wAnqUL9QCAP0GDNA=
+  </data>
+ </layer>
+ <layer id="1" name="Walls_lower" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA+YAdiDiScRwQbnc+JZJ4CECsC8WYo3Q6lsbGz0fhboWwlGviTngAWptjCjxOPPlx6zYF4IwNqmLVDxSygamxxmKfAgBn2YXjsDyVCDT7AA8S8ZOrFBlSBWI2K5tkBsT0VzRsswIYBkraQ87M8krwckrgtkh5caRKUDkD5UIEBe7qBpZNsJHGQ2ByGoZ9/hysAAChkFIU=
+  </data>
+ </layer>
+ <objectgroup id="9" name="Instances">
+  <object id="19" name="obj_character" gid="197" x="118" y="186" width="16" height="16"/>
+  <object id="20" name="obj_character" gid="197" x="187.5" y="140.5" width="16" height="16"/>
+  <object id="21" name="obj_character" gid="197" x="264.5" y="128.5" width="16" height="16">
+   <properties>
+    <property name="image_alpha" type="float" value="0.5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="8" name="Walls_upper" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyTYWBgkKEyphaglXmWVDDLGo95XEAcDMVtONggzI2kJwDJvCA0dWxEuAekTwWJn8lA3fBDdh81ALL7aBUfyPHAjUMfTB03EhukPgSLecpIYioMuIEykjyyHnTzkN2cS8Bv2PTgMw+WhpD9jey3HCLMoxTQwzyQ+3OwK8cLcOVfawby3EtL85DLgxA0Pq7ypQ2NRk7P1MQATXoh2g==
+  </data>
+ </layer>
+</map>
