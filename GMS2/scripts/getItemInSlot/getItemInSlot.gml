@@ -1,0 +1,1 @@
+return gear[argument0];

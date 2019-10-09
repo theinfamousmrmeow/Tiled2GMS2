@@ -1,0 +1,1 @@
+return (room==rm_shop);

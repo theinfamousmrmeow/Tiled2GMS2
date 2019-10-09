@@ -1,0 +1,1 @@
+return instance_nearest(room_width,room_height/2,Paddle);

@@ -1,0 +1,1 @@
+global.levelSelected = argument0;

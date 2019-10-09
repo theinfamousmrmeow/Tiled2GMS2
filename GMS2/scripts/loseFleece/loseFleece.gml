@@ -1,0 +1,1 @@
+global.goldenFleece = clamp(global.goldenFleece,0,(global.goldenFleece- argument0));

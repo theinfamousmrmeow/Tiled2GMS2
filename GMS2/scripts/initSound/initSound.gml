@@ -1,0 +1,1 @@
+audio_listener_position(room_width/2, room_height/2, 0);

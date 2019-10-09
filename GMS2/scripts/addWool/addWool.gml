@@ -1,0 +1,1 @@
+global.wool+=argument0;

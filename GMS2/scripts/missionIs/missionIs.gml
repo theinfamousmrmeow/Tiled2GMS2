@@ -1,0 +1,1 @@
+return global.mission==argument0;

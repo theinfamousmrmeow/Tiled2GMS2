@@ -1,0 +1,1 @@
+global.wool = clamp(global.wool,0,(global.wool- argument0));

@@ -1,0 +1,24 @@
+Name,Damage,Weight,throwSpeed,topSpeed,Blunt,Cost,Text
+Boulder,40,20,3,5,1,0,Big ol rock.
+Cannonball,60,30,3,5,1,0,Giant iron ball.
+Morningstar,30,15,4,5,1,0,"Spins around you, use timing to aim!"
+DoubleFlail,30,15,4,5,1,2000,"Two flail-heads on a chain"
+TripleFlail,30,15,4,5,1,2000,"Three flail-heads on a chain!"
+MeteorHammer,25,12,4,5,1,0,"A lighter, longer flail."
+Chainsickle,20,10,4,5,1,0,"A Sickle on a chain."
+Scythe,15,5,4,7,0,0,Curving trajectory.
+Kama,14,5,4,7,0,0,Curving trajectory.
+Fireball,25,0,4,5,1,0,Hold to charge up the spell.
+Beetlerang,20,4,4,6,0,0,A throwing-beetle that wiggles as it moves.
+MantisClaw,20,4,4,6,0,0,"A mantis foreleg as an improvised sickle."
+Axe,20,7,3,6,0,0,A short axe you can throw.
+GoldenAxe,50,3,5,9,0,0,"The legendary Golden Axe!"
+Francisca,18,6,3.5,7,0,1000,A lighter axe for throwing farther.
+Hammer,25,8,3,6,1,0,A short hammer for smiting.
+Chakram,30,15,0,7,0,1000,A bladed throwing disc.
+DoubleAxe,25,7.5,3,6,0,500,An imposing double-headed short axe.
+Thunderball,28,0,4,5.5,1,0,
+Frostball,30,0,4,5,1,0,
+Voidball,30,0,4,5,1,0,
+VenomBall,30,0,4,5,1,0,
+Gorgonhead,15,10,3,6,1,2000,"Chance to inflict Poison or Petrify!"

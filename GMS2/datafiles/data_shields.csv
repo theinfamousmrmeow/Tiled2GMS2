@@ -1,0 +1,13 @@
+Name,Weight,Soak,Charges,Cost,Text
+Red Shield,4,3,0,0,
+Blue Shield,5,4,0,0,
+Wooden Shield,2,2,0,0,
+Stone Shield,10,10,0,,Immune to petrification
+Iron Shield,6,5,0,500,Sturdy Iron Shield
+Gorgon Shield,8,5,5,,Petrification Beam
+Skull Shield,9,5,6,,Skull Shot
+Discus,8,3,0,5000,Throwable!
+Spiked Shield,8,3,,,
+Thorns Shield,8,5,5,,Reflect 10% of damage
+Void Shield,8,5,0,5000,
+Mirror Shield,9,4,0,9000,

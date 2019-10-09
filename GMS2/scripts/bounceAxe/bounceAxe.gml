@@ -1,0 +1,1 @@
+direction=point_direction(x,y,argument0,argument1)+180+random(8)-4;

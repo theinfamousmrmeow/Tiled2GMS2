@@ -4,28 +4,61 @@ import trace
 import xml.etree.ElementTree
 import math
 from xml.etree.ElementPath import prepare_child, xpath_tokenizer
+import json
 
+##
 __license__ = "WTF"
 __version__ = "1.0.0"
 __maintainer__ = "theinfamousmrmeow"
+##
+GMS2_room = ""
 
-#PYXEL FORMAT
-#<tilemap tileswide="32" tileshigh="70" tilewidth="16" tileheight="16">
-#  <layer number="14" name="Water">
-#    <tile x="0" y="0" tile="-1" rot="0" flipX="false"/>
 
-#GMS FORMAT
-#  <tiles>
-#   <tile bgName="new_tileset" x="304" y="688" w="16" h="16" xo="0" yo="0" id="10001160" name="inst_BE90E27B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+#For reasons beyond mortal ken, this is the empty TileID...
+EMPTY_TILE = 2147483648 
+verbose = True
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(x,indent=4))
+
+# some JSON:
+x =  '{ "name":"John", "age":30, "city":"New York"}'
+
+# parse x:
+y = json.loads(x)
+
+# the result is a Python dictionary:
+y["age"]=3
+print(y["age"])
+
+
+
+
+#c:/Users/alexa/Documents/GitHub/Tiled2GMS2/tiled2GMS2.py sample.xml 16 sample.xml sample.xml
+
+#Tiled Format for Layers
+
+#GMS FORMAT FOR LAYERS
 
 #get arguments
 # ['test.py', 'arg1', 'arg2', 'arg3']
 #tileset file,pyxel export filename,GM:S room XML filename
 def main(_tileset_name,_tileset_width,_pyxel_filename,_gmsroom_filename):
 
-    verbose = True
+   
 
-    if (verbose):
+    if (verbose==True):
         print('Source Pyxel XML File: %s' % (_pyxel_filename))
         print('Target Game Maker Studio Room File: %s' % (_gmsroom_filename))
 
@@ -34,6 +67,7 @@ def main(_tileset_name,_tileset_width,_pyxel_filename,_gmsroom_filename):
         gms_tree = xml.etree.ElementTree.parse(_gmsroom_filename)
         print('Loaded GMS2 file!!!')
         pyxel_tree = xml.etree.ElementTree.parse(_pyxel_filename)
+        print('Real done.')
 
     except IOError:
         sys.stderr.write('Error: Failed to open file %s' % (_gmsroom_filename))

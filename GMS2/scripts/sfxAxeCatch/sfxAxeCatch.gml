@@ -1,0 +1,1 @@
+return choose(sfxAxeCatch1);

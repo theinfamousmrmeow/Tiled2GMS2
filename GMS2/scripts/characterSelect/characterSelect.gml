@@ -1,0 +1,1 @@
+global.character[argument1]=argument0;

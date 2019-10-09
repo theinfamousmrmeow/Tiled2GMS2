@@ -1,0 +1,1 @@
+return global.game_mode;

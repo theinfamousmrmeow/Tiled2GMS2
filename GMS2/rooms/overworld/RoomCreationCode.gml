@@ -1,0 +1,2 @@
+//initGame();
+initParticles()

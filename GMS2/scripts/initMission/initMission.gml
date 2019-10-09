@@ -1,0 +1,1 @@
+global.missionResult = missionResults.noneYet;

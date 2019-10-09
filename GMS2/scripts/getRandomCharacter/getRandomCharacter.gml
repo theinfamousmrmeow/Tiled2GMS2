@@ -1,0 +1,1 @@
+return choose(Ragnar,Lothgar,Ghost,Wizard,DeathKnight,Valkyrie,Troll,Goblin,Reaper);

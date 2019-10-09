@@ -1,0 +1,1 @@
+return choose(sfxVikingStruck1,sfxVikingStruck2);

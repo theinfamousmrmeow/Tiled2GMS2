@@ -1,0 +1,17 @@
+initParticles();
+initFonts();
+startMatch();
+initGestureSettings();
+initCharacters();
+initCombatants();
+initDifficulty();
+//initWool();
+initEquipment();
+initMission();
+initProgress();
+loadUnlockedWeapons();
+initCharacterStats();
+global.mission = missions.title;
+global.roundsInMatch = 3;
+global.game_state=gameState.title;
+global.game_mode = gameMode.title;
