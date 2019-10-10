@@ -6,6 +6,7 @@ if (instance_exists(CharacterSelectIcon)){
 	var icon = instance_nearest(x,y,CharacterSelectIcon);
 
 	if (icon.unlocked && distance_to_object(icon)<4){
+		sfx2DPlay(sfxBell2);
 		x = icon.x;
 		y= icon.y
 		selection= icon.character;
@@ -28,9 +29,11 @@ else {
 	selection = icon.object_index;
 	if (icon.itemType == heldItemType.weapon){
 		global.gear[player,slot.primaryHand]=icon.object_index;
+		sfx2DPlay(sfxBell2);
 	}
 	else if (icon.itemType == heldItemType.shield){
 		global.gear[player,slot.offHand]=icon.object_index;
+		sfx2DPlay(sfxBell2);
 	}
 	if (inShop() && payCost(icon.woolCost,icon.fleeceCost)){
 		sfx2DPlay(sfxItemGet);

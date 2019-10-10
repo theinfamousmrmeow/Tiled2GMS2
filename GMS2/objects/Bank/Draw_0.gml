@@ -2,10 +2,6 @@
 // You can write your code in this editor
 set_font_main();
 draw_set_color(c_white);
-draw_text(0,16,room_get_name(room))
-
-
-
 cam = view_get_camera(0);
 yy = camera_get_view_y(cam)+camera_get_view_height(cam)-16+((amt/100)*32);
 xx = camera_get_view_x(cam);

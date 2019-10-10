@@ -2,8 +2,9 @@
 // You can write your code in this editor
 if (action == actions.throw){
 	if (hasWeapon()){
-		sfxTypePlay(sfxAxeThrow());
+
 		i=getItemInSlot(slot.primaryHand);
+		sfxTypePlay(i.serveSound);
 		unequipSlot(id,slot.primaryHand);
 		//i=instance_create_depth(x,y,depth,Axe);
 		i.action=actions.thrown;

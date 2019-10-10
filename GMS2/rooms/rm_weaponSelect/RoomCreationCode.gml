@@ -10,6 +10,7 @@ col_no = 8;
 row_no = 2;
 players=global.players;
 
+		
 		var grid = global.grid_weapons;
 		var height = ds_grid_height(grid);
 		var shieldGrid = global.grid_shields;
@@ -33,10 +34,14 @@ players=global.players;
 				i.visible=true;
 				with (i){
 					
-					spawnParticleAbove(x,y,global.p_ectoplasm,10);
 				}		
 			}
 		}
+		
+		
+		
+
+		
 
 count++;
 

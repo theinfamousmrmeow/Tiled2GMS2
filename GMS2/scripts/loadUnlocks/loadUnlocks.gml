@@ -1,6 +1,5 @@
 ini_open(FILE_UNLOCKS);
 ds_list_clear(global.unlocksList);
-
 global.unlocks[unlocks.buildings,buildings.versus] = ini_read_real("buildings", "versus", 0);
 global.unlocks[unlocks.buildings,buildings.shop] = ini_read_real("buildings", "shop", 0);
 global.unlocks[unlocks.buildings,buildings.arcadeTowerOne] = ini_read_real("buildings", "tower1", 0);
@@ -11,13 +10,12 @@ global.unlocks[unlocks.buildings,buildings.longship] = ini_read_real("buildings"
 global.unlocks[unlocks.buildings,buildings.bridge] = ini_read_real("buildings", "bridge", 0);
 //CHARACTERS
 charStack = ds_stack_create();
-ds_stack_push(charStack,"Ragnar","Lothgar","Valkyrie","Reaper","Wizard","Goblin",);
+ds_stack_push(charStack,"Ragnar","Lothgar","Valkyrie","Reaper","Wizard");
 while (ds_stack_size(charStack)>0){
 	var i = ds_stack_pop(charStack);
 	if (ini_key_exists("characters",i)){ds_list_add(global.unlocksList,i);}
 }
 ds_stack_destroy(charStack);
-//BUILDINGS
 
 //if (ini_key_exists("characters","Ragnar")){ds_list_add(global.unlocksList,"Ragnar");}
 global.unlocks[unlocks.characters,characters.Ragnar] = ini_read_real("characters", "Ragnar", 0);
@@ -35,7 +33,10 @@ global.unlocks[unlocks.characters,characters.Goblin] = ini_read_real("characters
 //When populating store of unlocked weapons, just iterate through the array and populate.
 //global.unlocks[unlocks.weapons,i] = ini_read_real("weapons",weaponName,0);
 //if (ini_read_string("weapons",weaponName,0)==1) then global.unlocks[unlocks.weapons,i]=weaponName;
-ini_close();
+
 loadUnlockedBuildings();
+
+ini_close();
+
 loadUnlockedWeapons();
 //load_csv(working_directory + "\data_weapons.csv")

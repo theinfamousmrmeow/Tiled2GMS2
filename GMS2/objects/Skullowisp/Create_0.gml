@@ -11,6 +11,4 @@ catchable=false;
 
 action = actions.thrown;
 
-sfxTypePlay(sfxNecromancy);
-
 friction=0;

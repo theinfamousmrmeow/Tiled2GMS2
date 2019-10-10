@@ -3,6 +3,9 @@
 #macro SHEEP_MAX 12
 #macro SIDE_OFFSET 48
 
+#macro STR_BUILT "_built"
+#macro STR_DESTROYED "_destroyed"
+
 #macro FILE_UNLOCKS "unlocks.ini"
 
 #macro VERSION "0.9.3"
@@ -60,10 +63,6 @@
 #macro HIGHSCORE_FILENAME "highscoretable.ini"
 #macro SHIELD_SIZE 8
 #macro z_terminal_velocity -3
-
-
-#macro STR_BUILT "_built"
-#macro STR_DESTROYED "_destroyed"
 
 //
 enum slot {

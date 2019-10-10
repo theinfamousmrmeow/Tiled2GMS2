@@ -3,5 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-
+serveSound = sfxThrowHeavy;
 damageType = damageTypes.blunt;

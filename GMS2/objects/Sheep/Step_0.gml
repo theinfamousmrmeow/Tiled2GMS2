@@ -39,10 +39,10 @@ if (hspeed!=0){
 	image_xscale = sign(hspeed);
 }
 
-if (hp==1){
+if (hp<=hpMax/2){
 	bodySprite=spr_sheep_wool_naked;	
 }
-if (hp==2){
+else{
 	bodySprite=spr_sheep_wool_white;
 }
 

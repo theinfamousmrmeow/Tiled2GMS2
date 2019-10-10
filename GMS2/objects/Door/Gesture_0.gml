@@ -4,8 +4,10 @@
 if (action==actions.stand){
 image_index=1;
 action = actions.held;
+sfxTypePlay(sfxDoorOpen);
 }
 else {
+	sfxTypePlay(sfxDoorClose);
 	i=instance_create_depth(x,y,-9999,FX_fadein);
 	global.players=1;
 	setGameMode(doorGameMode);

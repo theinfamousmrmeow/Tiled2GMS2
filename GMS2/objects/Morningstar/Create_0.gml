@@ -6,6 +6,7 @@ event_inherited();
 visible=false;
 //Create chain
 damageType = damageTypes.blunt;
+serveSound = sfxThrowHeavy;
 
 head=id;
 var num=5;

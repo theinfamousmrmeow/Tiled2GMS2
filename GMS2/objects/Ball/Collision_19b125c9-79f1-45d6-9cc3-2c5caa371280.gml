@@ -8,8 +8,8 @@ if (action!=actions.held && other.action!=actions.held){
 	speed = prevspeed;
 	//direction+=random(40)-20;
 	if (x<other.x){
-		sfxTypePlay(sfxAxeClang());
-		spawnParticleAbove(mean(x,other.x),mean(y,other.y),global.p_wool,10);
+		sfxTypePlay(sfxWeaponDeflects());
+		spawnParticleAbove(mean(x,other.x),mean(y,other.y),global.p_spark,12);
 	}
 	if (other.destroyOnHit){
 		with other instance_destroy();

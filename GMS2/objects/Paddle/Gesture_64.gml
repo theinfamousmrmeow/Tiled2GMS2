@@ -12,13 +12,7 @@ if (onOverworld() && !instance_exists(Button) && !isAI){
        path_start(path, 1, path_action_stop, 1);
        }
 	else {
-		i=instance_create_depth(x,y-32,-9999,TextBox);
-		i.owner = id;
-		i.targetText = choose(
-		"I can't.",
-		"Can't go there!",
-		"Not there?");
-
+		
 		spawnParticleAbove(dest_x,dest_y,global.p_wool,10)	
 	}
 	    }

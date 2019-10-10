@@ -3,6 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-
+serveSound = sfxThrowMagic;
 charge = 0;
 maxCharge = 320;

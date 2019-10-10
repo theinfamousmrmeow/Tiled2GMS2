@@ -3,13 +3,12 @@
 
 //other.direction=point_direction(x,y,other.x,other.y);
 
-if (other.action==actions.held || other.catchable=false) return;
+if (other.action==actions.held) return;
 
 if (action == actions.KO || action == actions.celebrate){return;}
 
 if (player == other.player && other.age > 15 && action!=actions.hit){
 	//Catch the axe
-	
 	if (!hasWeapon() && distanceToEdge()>distanceToEdgeOther(other)) || (axesHeld<axesMax && hasShield==false){
 		sfxTypePlay(sfxAxeCatch());
 		action = actions.catch;
@@ -51,10 +50,12 @@ if (other.player !=player && action != actions.hit){
 		}
 		sfxTypePlay(sfxVikingStruck());
 		action = actions.hit;
-		hp-=other.damage;
+		var dam = other.damage;
+		if (other.owner == id){dam/=2;}
+		hp-=dam;
 		jitter= 5;
 		alarm[0]=TICKS_TO_SECONDS*1;
-		zspeed=min(0.5+other.damage/20,4);
+		zspeed=min(0.5+dam/20,4);
 		screenShake(5);
 		//
 		if (other.object_index==Beetlerang){
@@ -77,7 +78,7 @@ if (other.player !=player && action != actions.hit){
 	else {
 		//Deflect Sound
 		if (other.destroyOnHit){
-			with other instance_destroy();	
+			with other {instance_destroy();}
 		}
 		hp-=5;
 		other.direction=point_direction(x,y,other.x,other.y);

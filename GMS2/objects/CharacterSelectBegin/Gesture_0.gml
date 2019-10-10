@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if (disabled) return;
 if (visible && image_alpha==1){
+	sfx2DPlay(sfxBell1);
 	global.game_state = gameState.playing;
 	switch (getGameMode()){
 		

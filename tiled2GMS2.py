@@ -27,13 +27,28 @@ EMPTY_TILE = 2147483648
 LAYERTAG_TILE = 'GMRTileLayer'
 verbose = True
 
-GMS2_ROOM_NAME = './GMS2/rooms/overworld/overworld.yy'
+GMS2_ROOM_NAME = "./GMS2/rooms/overworld/overworld.yy"
+GMS2_DUMMY_LAYER_FILE = "dummyTileLayer.json"
 GMS2_LAYER_TARGET = "Tiles_4"
 TILED_TMX = './Tiled/ValleyHoller.tmx'
+
+with open(GMS2_DUMMY_LAYER_FILE) as json_file:
+    dictDefaultLayer = json.load(json_file)
 
 with open(GMS2_ROOM_NAME) as json_file:
     data = json.load(json_file)
     data['name']='overworld_after_changes'
+    data['fuckoff'] = {
+        "YouAre":{
+            "ABitch" : True
+        }
+    }
+    #This is getting the LIST of Layers
+    dictLayers = data['layers']
+    #TODO:  Make this increment the size of DictLayers first...
+    print(len(dictLayers))
+    dictLayers.append(dictDefaultLayer)
+    
     for p in data['layers']:
         if p['modelName']==LAYERTAG_TILE:
             print('Name: ' + p['name'])
