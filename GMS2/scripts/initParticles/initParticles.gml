@@ -67,17 +67,6 @@ part_type_direction(global.p_wool, 0, 180, 0, 10);
 part_type_gravity(global.p_wool, 0.02, 270);
 part_type_life(global.p_wool, 30, 60);
 
-global.p_spark = part_type_create();
-part_type_sprite(global.p_spark , spr_fx_slash, 0, 0, 1);
-part_type_orientation(global.p_spark, 0, 10, 0, 10, 1);
-part_type_size(global.p_spark, 0.25, 1, -0.03, 0.1);
-part_type_scale(global.p_spark, 1, 1.5);
-part_type_alpha2(global.p_spark, 1, 1);
-part_type_speed(global.p_spark, 1, 3, 0, 0);
-part_type_direction(global.p_spark, 0, 180, 0, 10);
-part_type_gravity(global.p_spark, 0.07, 270);
-part_type_life(global.p_spark, 20, 40);
-
 
 global.p_feather = part_type_create();
 part_type_sprite(global.p_feather , spr_manticore_feather_small, 0, 0, 1);

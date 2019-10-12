@@ -1,3 +1,3 @@
-/// @description Regen hp
+/// @description Insert description here
 // You can write your code in this editor
-hp=hpMax
+hp=2;

@@ -50,12 +50,10 @@ if (other.player !=player && action != actions.hit){
 		}
 		sfxTypePlay(sfxVikingStruck());
 		action = actions.hit;
-		var dam = other.damage;
-		if (other.owner == id){dam/=2;}
-		hp-=dam;
+		hp-=other.damage;
 		jitter= 5;
 		alarm[0]=TICKS_TO_SECONDS*1;
-		zspeed=min(0.5+dam/20,4);
+		zspeed=min(0.5+other.damage/20,4);
 		screenShake(5);
 		//
 		if (other.object_index==Beetlerang){

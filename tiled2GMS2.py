@@ -6,7 +6,6 @@ import math
 from xml.etree.ElementPath import prepare_child, xpath_tokenizer
 import json
 from xml.dom import minidom
-
 ##
 __license__ = "WTF"
 __version__ = "1.0.0"
@@ -22,6 +21,36 @@ Basic Structure:
 
 """
 
+#Returns a dictionary of a default layer type
+def createDefaultLayer(layerName):
+  dictDefaultLayer = json.load(json_file)
+  dictDefaultLayer['name']=layerName
+  return dictDefaultLayer
+
+def getLayer(roomDict,layerName):
+    for p in roomDict['layers']:
+        if p['name']==layerName:
+            return p
+
+def layerExists(roomDict,layerName):
+    for p in roomDict['layers']:
+        if p['name']==layerName:
+            return True
+        return False
+
+def removeLayerFromRoom(roomDict,layerName):
+    listLayers = list()
+    listLayers = roomDict['layers']
+    if listLayers.count(layerName)>0:
+        listLayers.remove(layerName)
+
+#layerDict;  Pass the dictionary that represents the layer.
+def addTileToLayer(layerDict,tileID):
+    layerDict['tiles']['TileSerialiseData'].append(tileID)
+
+def addLayerToRoom(roomDict,layerDict):
+    return 0
+
 #For reasons beyond mortal ken, this is the empty TileID...
 EMPTY_TILE = 2147483648 
 LAYERTAG_TILE = 'GMRTileLayer'
@@ -33,10 +62,26 @@ GMS2_LAYER_TARGET = "Tiles_4"
 TILED_TMX = './Tiled/ValleyHoller.tmx'
 
 with open(GMS2_DUMMY_LAYER_FILE) as json_file:
-    dictDefaultLayer = json.load(json_file)
+    dictDefaultLayer = createDefaultLayer("newestLayer")
+    addTileToLayer(dictDefaultLayer,0)
+    print (dictDefaultLayer['tiles']['TileSerialiseData'])
+    fuck = dictDefaultLayer['tiles']
+    print (fuck['TileSerialiseData'])
+    print("FUCK")
+    print((dictDefaultLayer['tiles'])['SerialiseData'])
+    #print wjdata['data']['current_condition'][0]['temp_C']
+
+    for p in dictDefaultLayer['tiles']:
+        print("FUCK: "+p)
+        currentList = p[3]
+        print("SHITFUCK:"+currentList)
+
+            
 
 with open(GMS2_ROOM_NAME) as json_file:
     data = json.load(json_file)
+    print("Tiles_4")
+    print(getLayer(data,"Tiles_4"))
     data['name']='overworld_after_changes'
     data['fuckoff'] = {
         "YouAre":{
@@ -48,6 +93,9 @@ with open(GMS2_ROOM_NAME) as json_file:
     #TODO:  Make this increment the size of DictLayers first...
     print(len(dictLayers))
     dictLayers.append(dictDefaultLayer)
+    if layerExists(data,"Tiles_4"):
+        print("FOUND THAT SHIT")
+    removeLayerFromRoom(data,"Tiles_4")
     
     for p in data['layers']:
         if p['modelName']==LAYERTAG_TILE:
@@ -95,6 +143,9 @@ for elem in items:
 #Tiled Format for Layers
 
 #GMS FORMAT FOR LAYERS
+
+
+
 
 #get arguments
 # ['test.py', 'arg1', 'arg2', 'arg3']

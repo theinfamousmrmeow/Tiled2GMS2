@@ -9,7 +9,7 @@ if (action!=actions.held && other.action!=actions.held){
 	//direction+=random(40)-20;
 	if (x<other.x){
 		sfxTypePlay(sfxWeaponDeflects());
-		spawnParticleAbove(mean(x,other.x),mean(y,other.y),global.p_spark,12);
+		spawnParticleAbove(mean(x,other.x),mean(y,other.y),global.p_wool,10);
 	}
 	if (other.destroyOnHit){
 		with other instance_destroy();

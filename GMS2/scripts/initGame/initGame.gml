@@ -15,4 +15,3 @@ global.mission = missions.title;
 global.roundsInMatch = 3;
 global.game_state=gameState.title;
 global.game_mode = gameMode.title;
-unlockBuilding("Shop");

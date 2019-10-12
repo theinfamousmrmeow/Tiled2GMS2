@@ -24,7 +24,7 @@
                 "SerialiseData": null,
                 "SerialiseHeight": 0,
                 "SerialiseWidth": 0,
-                "TileSerialiseData": [
+                "TileSerialiseData": [0,0
                 ]
             },
             "tilesetId": "00000000-0000-0000-0000-000000000000",
