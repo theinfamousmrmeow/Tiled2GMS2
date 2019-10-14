@@ -9,7 +9,9 @@
         "e618d3fd-9774-4d8e-9ff9-c5755579d35f",
         "cb66108c-a40f-49c9-9938-0978ad01b955",
         "0c7527ed-2364-495f-911c-4daf1255673d",
-        "72fc2357-acb6-40f4-a68f-c86b0e72e88f"
+        "72fc2357-acb6-40f4-a68f-c86b0e72e88f",
+        "6fa775b8-7ea8-4cb7-a4f2-3f634ef897a9",
+        "1446be7e-7dad-46a2-b046-049ae04b824c"
     ],
     "filterType": "GMScript",
     "folderName": "Buildings",

@@ -67,6 +67,7 @@ else {
 
 i=instance_create_depth(x,y,depth,getDefaultWeapon(object_index));
 i.player = player;
+i.owner=id;
 equipItem(id,i,slot.primaryHand);
 
 if (onOverworld()){
@@ -75,6 +76,7 @@ if (onOverworld()){
 
 i=instance_create_depth(x,y,depth,getDefaultShield(object_index));
 i.player = player;
+i.owner=id;
 equipItem(id,i,slot.offHand);
 
 if (onOverworld()){

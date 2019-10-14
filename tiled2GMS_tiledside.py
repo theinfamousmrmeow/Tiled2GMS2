@@ -38,11 +38,10 @@ tree = ElementTree.parse(TILED_TMX)
 root = tree.getroot()
 for child in root:
     if (child.tag=="layer"):
-        print(child.attribute('name'))
-        for c in child:
-            print(c.text)
+        if (child.get('name')=='Shadow'):
+            for c in child:
+                print((c.text).split(","))
 tilesElement = root.find('tiles')
-
 
 #print(json.dumps(x,indent=4))
 

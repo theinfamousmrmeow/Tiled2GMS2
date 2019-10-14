@@ -1,7 +1,7 @@
 {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "dummyTileLayer",
-            "id": "2769781a-8b8d-4b77-afa6-2e1e006b3f4b",
+            "id": "2769781a-8b8d-4b77-afa6-2e1e006b3f4",
             "depth": 0,
             "grid_x": 16,
             "grid_y": 16,
@@ -22,12 +22,12 @@
             "mvc": "1.0",
             "tiles": {
                 "SerialiseData": null,
-                "SerialiseHeight": 0,
-                "SerialiseWidth": 0,
-                "TileSerialiseData": [0,0
+                "SerialiseHeight": 150,
+                "SerialiseWidth": 140,
+                "TileSerialiseData": [1,1
                 ]
             },
-            "tilesetId": "00000000-0000-0000-0000-000000000000",
+            "tilesetId": "40ca7122-bf18-4911-88ce-0d54d8af1696",
             "userdefined_depth": false,
             "visible": true,
             "x": 0,

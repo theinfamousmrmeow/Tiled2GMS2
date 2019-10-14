@@ -10,6 +10,7 @@ angle=0;
 weight=3;
 xscale=1;
 player = 0;
+owner=-1;
 serveSound = sfxAxeThrow1;
 blunt=false;
 damageType = damageTypes.sharp;

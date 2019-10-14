@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "1446be7e-7dad-46a2-b046-049ae04b824c",
+            "Value": {
+                "id": "0c92e550-475a-4d49-8960-4166234b0aaa",
+                "resourcePath": "scripts\\string_contains\\string_contains.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1457af4f-742b-4e27-8123-bdffe10ef227",
             "Value": {
                 "id": "27a0234f-cdc1-4a11-897a-a12a5a2472e0",
@@ -2151,6 +2159,14 @@
             }
         },
         {
+            "Key": "6fa775b8-7ea8-4cb7-a4f2-3f634ef897a9",
+            "Value": {
+                "id": "4438f52f-7674-454d-a6a4-e5bd05c883f4",
+                "resourcePath": "scripts\\showUnlockedBuildings\\showUnlockedBuildings.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6fd2d7e7-6af6-4fe4-9c56-0ef96aa50fc9",
             "Value": {
                 "id": "18c0899b-59e0-4d14-85ef-07400fc56683",
@@ -2447,6 +2463,14 @@
             }
         },
         {
+            "Key": "7fe5ee71-8e22-4f98-acc3-f10a8f3bb0b3",
+            "Value": {
+                "id": "45d21fde-c779-409c-bc03-bec497c18f98",
+                "resourcePath": "tilesets\\tileset4\\tileset4.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "8051000b-6830-4bfd-80a2-40999682e389",
             "Value": {
                 "id": "611f7c1f-6ae5-4f9d-b22b-155f435dda36",
@@ -2468,6 +2492,14 @@
                 "id": "d6ab1c1d-58e1-495b-b36b-e420c5f7f586",
                 "resourcePath": "objects\\DeathKnight\\DeathKnight.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "81ee24ec-3137-486c-b287-a3eed4ebc921",
+            "Value": {
+                "id": "f0fa65b4-a02a-48bf-bff9-acf92dddc2fa",
+                "resourcePath": "sprites\\sprite199\\sprite199.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4921,6 +4953,8 @@
         "cb66108c-a40f-49c9-9938-0978ad01b955",
         "0c7527ed-2364-495f-911c-4daf1255673d",
         "72fc2357-acb6-40f4-a68f-c86b0e72e88f",
+        "6fa775b8-7ea8-4cb7-a4f2-3f634ef897a9",
+        "1446be7e-7dad-46a2-b046-049ae04b824c",
         "65f38386-7a95-4082-9576-efe5658b7241"
     ],
     "tutorial": ""

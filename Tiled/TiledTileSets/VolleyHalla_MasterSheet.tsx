@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.3" name="VolleyHalla_MasterSheet" tilewidth="16" tileheight="16" tilecount="1900" columns="50">
+<tileset name="VolleyHalla_MasterSheet" tilewidth="16" tileheight="16" tilecount="1900" columns="50">
  <image source="../Images/VolleyHalla_MasterSheet.png" width="800" height="608"/>
  <terraintypes>
   <terrain name="New Terrain" tile="384"/>
