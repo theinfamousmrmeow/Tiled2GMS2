@@ -137,6 +137,21 @@ def getAllTiledLayerNames(root):
             listLayerNames.append(child.get('name'))
     return listLayerNames
 
+#TODO:  list.reverse() doesn't work here, need to reverse listGids
+def getAllTiledTilesetGIDs(root):
+    listGIDS = []
+    for child in root:
+        if (child.tag=="tileset" and (not child.get('firstgid')=='1')):
+            listGIDS.append(int(child.get('firstgid')))
+    return listGIDS
+
+def checkTileIDIsSmallerThanGIDS(listOfGids,tileID):
+    newTileID = tileID
+    for gid in listOfGids:
+        if (newTileID>gid):
+            newTileID = newTileID - gid
+    return newTileID
+
 def hashName(name):
     fuckString = str(hash(name))
     fuckString = fuckString + fuckString + fuckString + fuckString
@@ -240,7 +255,7 @@ with open(GMS2_DUMMY_LAYER_FILE) as json_file:
 
     # parse an xml file by name
     mydoc = minidom.parse(TILED_TMX)
-
+    tiledTilesetList = items = mydoc.getElementsByTagName('tileset')
     items = mydoc.getElementsByTagName('layer')
     # Parse each layer
     print('Some layers (attributes):')
@@ -250,9 +265,9 @@ with open(GMS2_DUMMY_LAYER_FILE) as json_file:
     print(layerWidth +" W * "+layerHeight+" H")
 
     # all item attributes
-    #print('\nAll layer names:')
-    #for elem in items:
-    #    print(elem.attributes['name'].value)
+    print('\nAll GIDs:')
+    for elem in getAllTiledTilesetGIDs(TILED_ROOT):
+        print(elem)
 
     #print("TILED LAYER NAMES:")
     #for name in getAllTiledLayerNames(TILED_ROOT):
